@@ -60,7 +60,7 @@ a.nav-link:focus {
 }
 
 .header-row {
-    margin-top: 120px;
+    margin-top: 160px;
 }
 
 .name-header {
@@ -76,7 +76,7 @@ a.nav-link:focus {
 
 @media (max-width: 768px) {
     .header-row {
-        margin-top: 80px;
+        margin-top: 120px;
     }
 
     .name-header {
@@ -96,4 +96,8 @@ a.nav-link:focus {
 .hero-card {
     background-color: inherit;
     border-color: var(--bs-cyan);
+}
+
+.hero-card a {
+    color: white;
 }
