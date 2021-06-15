@@ -80,7 +80,7 @@ a.nav-link:focus {
     }
 
     .name-header {
-        font-size: 60px;
+        font-size: 50px;
     }
 }
 
@@ -96,8 +96,13 @@ a.nav-link:focus {
 .hero-card {
     background-color: inherit;
     border-color: var(--bs-cyan);
+    box-shadow: 0px 0px 15px 3px #048f99;
 }
 
 .hero-card a {
     color: white;
+}
+
+.footer {
+    font-size: 11px;
 }
