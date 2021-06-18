@@ -25,6 +25,10 @@
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bs-gray-dark);
     font-family: 'Source Code Pro', monospace;
@@ -60,32 +64,32 @@ a.nav-link:focus {
 }
 
 .header-row {
-    margin-top: 160px;
+    margin-top: 10rem;
 }
 
 .name-header {
     font-family: 'Bungee Shade', sans-serif;
-    font-size: 70px;
+    font-size: 4rem;
 }
 
 .name-tagline {
     font-family: 'Bungee Hairline', sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
     .header-row {
-        margin-top: 120px;
+        margin-top: 7rem;
     }
 
     .name-header {
-        font-size: 50px;
+        font-size: 3rem;
     }
 }
 
 .link-badges img {
-    height: 50px;
+    height: 3rem;
 }
 
 .section-title{
@@ -93,16 +97,17 @@ a.nav-link:focus {
     font-weight: 700;
 }
 
-.hero-card {
-    background-color: inherit;
-    border-color: var(--bs-cyan);
-    box-shadow: 0px 0px 15px 3px #048f99;
+.section-card {
+    border-radius: 15px;
+    background: #343a40;
+    box-shadow:  -15px -15px 30px #282d31,
+                15px 15px 30px #40474f;
 }
 
-.hero-card a {
+.section-card a {
     color: white;
 }
 
 .footer {
-    font-size: 11px;
+    font-size: .6rem;
 }
