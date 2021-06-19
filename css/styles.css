@@ -78,16 +78,6 @@ a.nav-link:focus {
     font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
-    .header-row {
-        margin-top: 7rem;
-    }
-
-    .name-header {
-        font-size: 3rem;
-    }
-}
-
 .link-badges img {
     height: 3rem;
 }
@@ -108,6 +98,37 @@ a.nav-link:focus {
     color: white;
 }
 
+.skill-badge img {
+    height: 6rem;
+    width: 6rem;
+}
+
+.skill-badge .img-resize {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1rem;
+}
+
 .footer {
     font-size: .6rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        font-size: 1rem;
+    }
+
+    .header-row {
+        margin-top: 7rem;
+    }
+
+    .name-header {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 470px) {
+    h5 {
+        font-size: 1rem;
+    }
 }
