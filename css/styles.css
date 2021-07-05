@@ -109,6 +109,10 @@ a.nav-link:focus {
     margin-top: 1rem;
 }
 
+#project-info img {
+    max-height: 12rem;
+}
+
 .footer {
     font-size: .6rem;
 }
