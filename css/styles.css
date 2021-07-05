@@ -136,6 +136,11 @@ a.nav-link:focus {
     .name-header {
         font-size: 3rem;
     }
+
+    #experience-info img {
+        height: 25%;
+        width: 25%;
+    }
 }
 
 @media (max-width: 470px) {
