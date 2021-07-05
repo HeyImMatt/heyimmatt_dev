@@ -6,18 +6,26 @@
         <link rel="shortcut icon" href="img/favicon.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Shade&family=Source+Code+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
         <title>Matt McFarland's Dev Portfolio</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand fixed-top p-3">
+        <nav class="navbar navbar-expand-md fixed-top p-3">
             <a class="navbar-brand" href="#start">@HeyImMatt</a>
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#skills">Skills</a>
-                <!-- <a class="nav-link" href="#">Contact</a> -->
+            <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon mt-2"><i class="fas fa-bars" style="color: white;"></i></div>
+            </button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
             </div>
         </nav>
 
@@ -70,11 +78,6 @@
                                 When I’m not at work, you can find me at the ice rink for hockey, outside for a 
                                 variety of activities like snowboarding, water skiing, camping and hiking, or at 
                                 an event space for live music and comedy.
-                                <br />
-                                <br />
-                                <span style="font-size: 12px;">(I am in the middle of a redesign on my site. Please see my 
-                                <a href="https://github.com/HeyImMatt" target="_blank">github profile</a> 
-                                for projects.)</span>
                             </p>
                             <div class="col-md-3 order-1 order-md-2">
                                 <img class="d-block mx-auto" src="img/headshot.png" alt="My headshot" />
@@ -132,6 +135,48 @@
                     </div>
                 </div>
                 <div class="col-12 text-center mt-5 mb-3">
+                    <h1 id="experience" class="section-title">-Experience-</h1>
+                </div>
+                <div class="col-md-5 text-center text-md-start mb-3">
+                    <div class="card mx-auto section-card">
+                        <div id="experience-info" class="card-body row text-center">
+                            <a href="https://opengov.com/products/procurement" target="_blank"><h5 class="mb-2">OpenGov</h5></a>
+                            <img class="img-fluid mt-2" src="img/opengov.png" alt="procurenow logo" />
+                            <p class="card-text mt-2">
+                                <span class="d-inline-block mb-2"><u>Software Engineer 2 | 2021-Present</u></span>
+                                <br />
+                                <span class="d-inline-block mb-2">
+                                    Building intuitive, easy-to-use, cloud-based software that enables 
+                                    government agencies to streamline their procurement process.
+                                </span>
+                                <br />
+                                <u>Tech</u>
+                                <br />
+                                Nodejs, Koa, Sequelize, React, Redux, PostgreSQL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center text-md-start mb-3">
+                    <div class="card mx-auto section-card">
+                        <div id="experience-info" class="card-body row text-center">
+                            <a href="https://procurenow.com" target="_blank"><h5 class="mb-2">ProcureNow</h5></a>
+                            <img class="img-fluid mt-2" src="img/procurenow.png" alt="procurenow logo" />
+                            <p class="card-text mt-2">
+                                <span class="d-inline-block mb-2"><u>Software Engineer | 2020-2021</u></span>
+                                <br />
+                                <span class="d-inline-block mb-2">
+                                    - Acquired by OpenGov -
+                                </span>
+                                <br />
+                                <u>Tech</u>
+                                <br />
+                                Nodejs, Koa, Sequelize, React, Redux, PostgreSQL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-5 mb-3">
                     <h1 id="projects" class="section-title">-Projects-</h1>
                 </div>
                 <div class="col-md-5 text-center text-md-start mb-3">
@@ -139,11 +184,11 @@
                         <div id="project-info" class="card-body row text-center">
                             <a href="https://github.com/heyimmatt/songstash" target="_blank"><h5 class="mb-2">SongStash</h5></a>
                             <img class="img-fluid" src="img/song-detail.png" alt="songstash screenshot" />
-                            <p class="card-text text-start mt-2">
-                                <span class="d-inline-block mb-2 text-start">SongStash allows you to create, search, and save song lyrics.</span>
+                            <p class="card-text mt-2">
+                                <span class="d-inline-block mb-2">SongStash allows you to create, search, and save song lyrics.</span>
                                 <u>Tech</u>
                                 <br />
-                                Flask, React w/ Redux, PostgreSQL
+                                Flask, React, Redux, PostgreSQL
                             </p>
                         </div>
                     </div>
@@ -152,15 +197,34 @@
                     <div class="card mx-auto section-card">
                         <div id="project-info" class="card-body row text-center">
                             <a href="https://github.com/HeyImMatt/orbital-sky" target="_blank"><h5 class="mb-2">What's Up, Spock</h5></a>
-                            <img class="img-fluid" src="img/orbital-sky.png" alt="songstash screenshot" />
-                            <p class="card-text text-start mt-2">
-                                <span class="d-inline-block mb-2 text-start">Collaborative Nasa 2020 Space Apps Challenge project.</span>
+                            <img class="img-fluid" src="img/orbital-sky.png" alt="space apps project screenshot" />
+                            <p class="card-text mt-2">
+                                <span class="d-inline-block mb-2">Collaborative Nasa 2020 Space Apps Challenge project.</span>
                                 <u>Tech</u>
                                 <br />
                                 Flask, Bootstrap, PostgreSQL
                             </p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="col-12 text-center mt-5 mb-3">
+                <h1 id="contact" class="section-title">-Contact-</h1>
+            </div>
+            <div class="col-4 mx-auto justify-content-evenly link-badges">
+                <div class="d-flex justify-content-evenly">
+                    <a href="https://github.com/HeyImMatt" target="_blank">
+                        <img src="img/github.svg" alt="github badge" class="d-inline-flex mx-2 my-1" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/mattmcfarland" target="_blank">
+                        <img src="img/linkedin.svg" alt="linkedin badge" class="d-inline-flex mx-2 my-1" />
+                    </a>
+                    <a href="https://twitter.com/heyimmatt" target="_blank">
+                        <img src="img/twitter.svg" alt="twitter badge" class="d-inline-flex mx-2 my-1" />
+                    </a>
+                    <a href="mailto:mrmcfarland@gmail.com">
+                        <img src="img/gmail.svg" alt="gmail badge" class="d-inline-flex mx-2 my-1" >
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -171,8 +235,6 @@
         </div>
         
         <!-- Bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" 
-            integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -109,6 +109,13 @@ a.nav-link:focus {
     margin-top: 1rem;
 }
 
+#experience-info img {
+    max-height: 6rem;
+    max-width: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #project-info img {
     max-height: 12rem;
 }
@@ -132,7 +139,7 @@ a.nav-link:focus {
 }
 
 @media (max-width: 470px) {
-    h5 {
+    .skill-badge h5 {
         font-size: .9rem;
     }
 }
